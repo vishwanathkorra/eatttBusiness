@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:text="@string/login"
+         android:textSize="25dip"
+         android:textStyle="bold" />
+    
+    <!--Email label  -->
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/user_name"/>
+    
+    <!-- Email text field -->
+    <EditText android:id="@+id/username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/user_name"/>
+    
+    <!-- Password label -->
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/user_password"/>
+    
+    <!-- password text field  -->
+    <EditText android:id="@+id/userpassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/user_password"
+        android:inputType="textPassword"/>
+    
+    <!-- Login Button  -->
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:gravity="center"
+        android:layout_marginTop="20dip" />
+    <TextView 
+        android:id="@+id/invalid_username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
